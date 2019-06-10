@@ -3,7 +3,7 @@
   <% @artists.each do |a| %>
   <li><%= link_to a.name, artist_path(a) %></li>
 
-  <%=pluralize(a.songs_count), 'Song') %>
+  <%=pluralize(a.songs_count, 'Song') %>
 
   <%end%>
 
